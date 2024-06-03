@@ -24,7 +24,7 @@ describe('Cadastro de usuário', () => {
         cadastro_usuario_page.preencheNome(nome)
         cadastro_usuario_page.clicarCadastrar()
         cadastro_usuario_page.validarMensagemErro('O campo e-mail deve ser preenchido corretamente')
-        // bug de ortografia neste teste
+        // achei bug de ortografia neste teste por isso está falhando este cenário
     })
         
     it('Cadastro E-mail inválido', () => {
@@ -32,7 +32,7 @@ describe('Cadastro de usuário', () => {
         cadastro_usuario_page.preencherEmail(nomePrimeiro) // invalido, estou entrando com um nome qq
         cadastro_usuario_page.clicarCadastrar()
         cadastro_usuario_page.validarMensagemErro('O campo e-mail deve ser preenchido corretamente')
-        // bug de ortografia neste teste
+        // achei bug de ortografia neste teste por isso está falhando este cenário
     })
 
     it('Cadastro senha vazio', () => {
