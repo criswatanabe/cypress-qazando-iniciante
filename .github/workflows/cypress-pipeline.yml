@@ -25,6 +25,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with: 
           record: true,
+        #colocar a chave secrets que criou no github linkando com o cypress cloud  
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
