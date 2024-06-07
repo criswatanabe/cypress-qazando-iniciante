@@ -4,7 +4,7 @@ name: Run Basic Testes
 # em que momento será executada
 on: 
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:    
   # o q vai ser feito nessa pipeline
@@ -25,8 +25,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with: 
           record: true,
+        #colocar a chave secrets que criou no github linkando com o cypress cloud  
         env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY}}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # exemplo de execução no terminal
       # - name: instalar dependencias do projeto
