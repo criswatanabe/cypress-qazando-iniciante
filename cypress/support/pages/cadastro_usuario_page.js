@@ -8,7 +8,7 @@ const elements ={
 
     campos:{
         nome:"#user",
-        email:"#email",
+        email:"#emailxx",
         senha:"#password"
     },
 
