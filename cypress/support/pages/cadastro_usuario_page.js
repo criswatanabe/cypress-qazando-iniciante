@@ -9,7 +9,7 @@ const elements ={
     campos:{
         nome:"#user",
         email:"#email",
-        senha:"#passwordX"
+        senha:"#password"
     },
 
     mensagens:{
